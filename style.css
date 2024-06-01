@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1));
+    color: #2bc738;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.game {
+    margin-top: 20px;
+}
+
+#product-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 5px solid #2bc738;
+    border-radius: 10px;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #2bc738;
+    border-radius: 5px;
+    outline: none;
+}
+
+#guess-input::placeholder {
+    color: rgba(15, 15, 15, 0.5);
+}
+
+#guess-input::-webkit-outer-spin-button,
+#guess-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#guess-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#submit-btn, #restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2bc738;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover, #restart-btn:hover {
+    background-color: #26b132;
+}
+
+#result, #score, #final-score {
+    margin-top: 20px;
+    font-size: 18px;
+}
